@@ -143,7 +143,6 @@
             .capiwaras-delivery-symbol{
                 width: auto;
                 height: 34%;
-                // left: calc(50% - 35px);
                 
                 top: -17%;
                 background-color: App.$neutral-color-white;
@@ -364,7 +363,6 @@
 @media screen and (min-width: 500px){
 
     .delivery-container{
-        // position: relative;
 
         .bag-items-container{
             top: calc(5vh + 15px);

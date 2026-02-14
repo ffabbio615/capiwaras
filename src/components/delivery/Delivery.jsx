@@ -55,24 +55,26 @@ export default function Delivery(){
             </div>
 
             {menuCategory.some((category) => category.category === "Promos do dia") && (
-                <div className="delivery-promo-items-container">
-                    <div className="food-category-container">
-                        <p className="category-title">Promos do dia</p>
-                    </div>
-                    <div className="food-items-container">
-                        { menuItems.filter((item) => item.category === "Promos do dia").map((item) => (
-                                <div key={item.id} onClick={()=> itemHandler(item.id)} className='food-option-menu'>
-                                    <p className='food-discount'>{(((item.promoValue*100) / (item.originalValue*1)) - 100).toFixed(0)}%</p>
-                                    <img src={`/img/dishes/${item.picture}.jpg`} className="food-image" alt='Imagem do Prato' />
-                                    <p className='food-title'>{item.name}</p>
-                                    <div className="item-price-container">
-                                        <p className='promo-food-price'>R${item.promoValue.toFixed(2).replace(".",",")}</p>
-                                        <p className='original-food-price'>R${item.originalValue.toFixed(2).replace(".",",")}</p>
+                menuItems.some((item) => item.category === "Promos do dia") && (
+                    <div className="delivery-promo-items-container">
+                        <div className="food-category-container">
+                            <p className="category-title">Promos do dia</p>
+                        </div>
+                        <div className="food-items-container">
+                            { menuItems.filter((item) => item.category === "Promos do dia").map((item) => (
+                                    <div key={item.id} onClick={()=> itemHandler(item.id)} className='food-option-menu'>
+                                        <p className='food-discount'>{(((item.promoValue*100) / (item.originalValue*1)) - 100).toFixed(0)}%</p>
+                                        <img src={`/img/dishes/${item.picture}.jpg`} className="food-image" alt='Imagem do Prato' />
+                                        <p className='food-title'>{item.name}</p>
+                                        <div className="item-price-container">
+                                            <p className='promo-food-price'>R${item.promoValue.toFixed(2).replace(".",",")}</p>
+                                            <p className='original-food-price'>R${item.originalValue.toFixed(2).replace(".",",")}</p>
+                                        </div>
                                     </div>
-                                </div>
-                            ))}
+                                ))}
+                        </div>
                     </div>
-                </div>
+                )
             )}
 
             <div className="delivery-items-container">

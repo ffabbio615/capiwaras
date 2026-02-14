@@ -6,10 +6,6 @@ export function DeliveryProvider ({children}){
 
     const [orderItems, setOrderItems] = useState([]);
 
-    // useEffect(()=>{
-    //     console.log(orderItems);
-    // },[orderItems])
-
     function addMainDeliveryItemQuantity(name, orderId){
         setOrderItems(orderItems.map(item =>
             item.name === name && item.orderId === orderId 
