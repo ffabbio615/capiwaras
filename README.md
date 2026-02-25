@@ -3,6 +3,26 @@
 
 🔗 **Deploy:** [https://capiwaras.vercel.app/](https://capiwaras.vercel.app/)
 
+Nomes de pratos com imagens adicionadas ao projeto (use para cadastrar um item e carregar a imagem automaticamente):
+
+aguaMineral
+bolinhosEmpanados
+capiChicken
+capiWish
+cupcakeChocolate
+frangoCaipira
+guisadoEspecial
+medalhaoDeFrango
+panquecaFrutasVermelhas
+saladaCaesar
+sorvetePistache
+spaghettiPomodoro
+sucoFortificante
+sucoLaranja
+sucoMelancia
+superWaras
+tortaFrutas
+
 ---
 
 ## 📱 Sobre o Projeto
@@ -27,9 +47,6 @@ O projeto teve todo o processo de identidade desenvolvido antes da implementaç�
 
 ### 🔗 Protótipos Figma
 
-* 📲 Mobile Only
-
-  [https://www.figma.com/proto/mdVmzltaqw0vA0lC0iwcaj/Capiwaras](https://www.figma.com/proto/mdVmzltaqw0vA0lC0iwcaj/Capiwaras)
 * 🗂 Organização das Telas
 
   [https://www.figma.com/design/mdVmzltaqw0vA0lC0iwcaj/Capiwaras](https://www.figma.com/design/mdVmzltaqw0vA0lC0iwcaj/Capiwaras)
